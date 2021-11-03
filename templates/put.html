@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>
+        Update!!
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body style="background-image: url({{ url_for('static', filename='img/edit-bg.jpg')}})">
+<center>
+<form action="" method ="post">
+        <fieldset>
+            <label for="id" style="font-family:Courier New; font-size:25px">What u need to edit? </label>
+            <input type="number" name="id" placeholder="id" required>
+        </fieldset>
+        <fieldset>
+            <label for="firstName"style="font-family:Courier New; font-size:25px">First Name</label>
+            <input type="text" name="firstName" placeholder="firstName" required>
+        </fieldset>
+        <fieldset>
+            <label for="lastName" style="font-family:Courier New; font-size:25px">Last Name</label>
+            <input type="text" name="lastName" placeholder="lastName" required>
+        </fieldset>
+        <fieldset>
+            <label for="email" style="font-family:Courier New; font-size:25px">Email</label>
+            <input type="email" name="email" placeholder="email" required>
+        </fieldset>
+        <fieldset>
+            <label for="mobile" style="font-family:Courier New; font-size:25px">Mobile Number</label>
+            <input type="tel" name="mobile" placeholder="mobile" pattern="[6-9]{1}[0-9]{9}" required>
+        </fieldset>
+        <fieldset>
+            <label for="address" style="font-family:Courier New; font-size:25px">Address</label>
+            <input type="text" name="address" placeholder="address" required>
+        </fieldset>
+        <button type="submit" class="'btn btn-info btn-lg">Update</button>
+    </form>
+    <a href="{{ url_for('main_page') }}"><button type="button" class="'btn btn-primary btn-lg">Home</button></a>
+</center>
+</body>
+</html>

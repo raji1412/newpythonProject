@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>
+        Delete
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body style="background-image: url({{ url_for('static', filename='img/edit-bg.jpg')}})">
+<center>
+<form action="" method="post">
+    <label for="id" style="font-family:Courier New; font-size:25px">Enter Id to delete: </label>
+    <input type="number" name="id" placeholder="id" required>
+    <button type="submit" class="'btn btn-info btn-primary">Delete</button>
+</form>
+    <a href="{{ url_for('main_page') }}"><button type="button" class="'btn btn-primary btn-lg">Home</button></a>
+</center>
+</body>
+</html>

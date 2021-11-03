@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>
+        Information
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body style="background-image: url({{ url_for('static', filename='img/edit-bg.jpg')}})">
+<center>
+    {% for det in inf %}
+    <p style="font-family:Courier New; font-size:25px">{ "id" : {{det.id}},</br>
+         "firstName" : {{det.firstName}},</br>
+        "lastName" : {{det.lastName}},</br>
+        "email" : {{det.email}},</br>
+        "mobile" : {{det.mobile}},</br>
+        "address" : {{det.address}},</br>
+        }</p>
+    {% endfor %}
+    <a href="{{ url_for('main_page') }}"><button type="button" class="'btn btn-primary btn-lg">Home</button></a>
+</center>
+</body>
+</html>
